@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site for Mobiles,Electronics,Grocer etc...flipkart.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .lastheader{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .input-group{
+            margin-top: 10px;
+        }
+        .topHeader{
+            padding-left: 200px;
+            padding-right: 200px;
+            height: 60px;
+            /* position:fixed; */
+            
+        }
+        /* .mainClass{
+            position:fixed;
+        } */
+        .sub{
+            font-size: 13px;
+        }
+        .navItems{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 300px;
+            padding-right: 300px;
+            margin-top: 20px;
+            
+        }
+        .navItems dl dd p:hover{
+            text-color:blue;
+            
+            }
+            .card-body p{
+                display: flex;
+                flex-direction: column;
+                margin-top: 100px;
+                font-size: 2.3em;
+            }
+            .card-body button{
+                margin-left: 50px;
+                padding: 10px 20px;
+            }
+            /* .fixedrosetag{
+                justify-content: end;
+            } */
+       
+        
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="mainClass">  
+        <div class="topHeader d-flex bg-primary">
+            <div class="head1 text-white">
+                <h4 class="ms-4 me-1 fw-bold ps-2">Flipcart</h4>
+                <p class=" sub ms-2 ps-4">Explore <span class="text-warning">Plus<span class="bi bi-plus"></span></span></p>
+            </div>
+            <div class="input-group ms-2  w-50 h-50 ">
+                <input type="text" placeholder="Search for products,brands and more" class="form-control">
+                <button class="btn bi bi-search text-primary bg-white "></button>   
+            </div>
+            <div class="lastheader">
+                <button class="btn bg-white text-primary m-4 ps-4 pe-4">Login</button>
+                <a href="" class="text-decoration-none text-white  p-2">Become a Seller</a>
+                <div class="dropdown" id="more">
+                    <button class="btn text-white  p-2 dropdown-toggle">More</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><span class="bi bi-bell">Notifications</span></li>
+                        <li class="dropdown-item"><span class="bi bi-facebook">Facebook</span></li>
+                        <li class="dropdown-item"><span class="bi bi-instagram">Instagram</span></li>
+                        <li class="dropdown-item"><span class="bi bi-twitter">Twitter</span></li>
+                    </ul>
+                </div>
+                <div class="carting fw-bold text-white  p-2"><span class="bi bi-cart4">Cart</span></div>
+            </div>
+        </div>
+        <div class="navBar">
+            <dl class="navItems top-0">
+                <dd class="me-2"><img src="Grocery" alt="Grocery">
+                <p class="text-center">Grocery</p>
+                </dd>
+                <dd class="me-2"><img src="Mobiles" alt="Mobiles">
+                <p class="text-center">Mobiles</p>
+                </dd>
+                <dd class="me-2"><img src="Fashions" alt="Fashions">
+                    <p><button class="btn text-dark dropdown-toggle text-center">Fashions</button></p>
+                    
+                </dd>
+                <dd class="me-2"><img src="Electronics" alt="Electronics">
+                    <p><button class="btn text-dark dropdown-toggle text-center">Electronics</button></p>
+                </dd>
+                <dd class="me-2"><img src="Home&Furniture" alt="Home&Furniture">
+                    <p><button class="btn text-dark dropdown-toggle text-center">Home&Furniture</button></p>
+                </dd>
+                <dd class="me-2"><img src="Appliances" alt="Appliances">
+                    <p><button class="btn text-dark dropdown-toggle text-center">Appliances</button></p>
+                </dd>
+                <dd class="me-2"><img src="Travel" alt="Travel">
+                <p class="text-center">Travel</p>
+                </dd>
+                <dd class="me-2"><img src="Beauty,Toys&More" alt="Beauty,Toys&More">
+                    <p><button class="btn text-dark dropdown-toggle text-center">Beauty,Toys&More</button></p>
+                </dd>
+                <dd class="me-2"><img src="Two Wheelers" alt="Two Wheelers">
+                    <p><button class="btn text-dark dropdown-toggle text-center">Two Wheelers</button></p>
+                </dd>
+            </dl>
+        </div>
+        <div class="carouselItems">
+            <div class="carousel slide carousel-dark" id="topBanner" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-06 214409.png" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-13 153450.png" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-13 153514.png" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-13 153534.png" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-13 153600.png" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-13 235827.png" class="w-100 d-block">
+                    </div>
+                    <div class="carousel-item" data-bs-slide="carousel" data-bs-interval="3000">
+                        <img src="Screenshot 2023-08-13 153514.png" class="w-100 d-block">
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#topBanner">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#topBanner">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-slide-to="0" data-bs-target="#topBanner"></button>
+                        <button data-bs-slide-to="1" data-bs-target="#topBanner"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#topBanner"></button>
+                        <button data-bs-slide-to="3" data-bs-target="#topBanner"></button>
+                        <button data-bs-slide-to="4" data-bs-target="#topBanner"></button>
+                        <button data-bs-slide-to="5" data-bs-target="#topBanner"></button>
+                        <button data-bs-slide-to="6" data-bs-target="#topBanner"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="card mt-3 border-0" style="width:250px;height: 300px;">
+                 
+                 <div class="card-body">
+                    <p class="text-center text-dark mt-4">Top Offers</p>
+                    <button class="btn btn-primary btn-sm text-center text-white">VIEW ALL</button>
+                    <img src="Screenshot 2023-08-13 231516.png" alt="blueimage" width="235px" height="150px" class="mt-3">
+                </div>       
+            </div>
+            <div class="card mt-3 ms-2 me-4 pt-2 border-0" style="width:200px;height: 300px;"   title="from 30,499*">
+                <img src="VivoV27" alt="VivoV27" height="200px" class="card-img-top ps-2">
+                <div class="card-header text-center">
+                    <p class="card-title fw-bold">VIVO V27 5G</p>
+                    <p class="card-subtitle text-success">incl of offers</p>
+                    <p>from 30,499*</p>
+                </div>
+            </div>
+            <div class="card mt-3 ms-2 me-4 pe-2 pt-2 border-0" style="width:200px;height: 300px;"   title="from 30,499*">
+                <img src="Realmec55" alt="RealmeC55" height="200px" class="card-img-top ps-2">
+                <div class="card-header text-center">
+                    <p class="card-title fw-bold">Realme C55</p>
+                    <p class="card-subtitle text-success">incl of offers</p>
+                    <p>from 30,499*</p>
+                </div>
+            </div>
+            <div class="card mt-3 ms-2 me-4 pe-2 pt-2 border-0" style="width:200px;height: 300px;"   title="from 11,699*">
+                <img src="Induction Cooktops" alt="Induction Cooktops" height="200px" class="card-img-top ps-2">
+                <div class="card-header text-center">
+                    <p class="card-title fw-bold">Induction Cooktops</p>
+                    <p class="card-subtitle text-success">minimum 50% offers</p>
+                    <p> By Prestige </p>
+                </div>
+            </div>
+            <div class="card mt-3 ms-2 me-4 pe-2 pt-2 border-0" style="width:200px;height: 350px;"   title="upto 80%">
+                <img src="Ukules & Guitars" alt="Ukules & Guitars" height="200px" class="card-img-top ps-2">
+                <div class="card-header text-center">
+                    <p class="card-title fw-bold">Ukules & Guitars</p>
+                    <p class="card-subtitle text-success">upto 80%</p>
+                    <p>Explore Now!</p>
+                </div>
+            </div>
+            <div class="fixedrosetag">
+                <img src="Screenshot 2023-08-13 225155.png" width="250px" height="340px" alt="fixedrosetag" class="bg-white p-3 mt-2">
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="snippet2 mt-2 mb-2">
+                <img src="Screenshot 2023-08-14 002226.png" alt="snippet2" class="w-100 d-block">
+            </div>
+        </div>
+        <div class="d-flex mt-2 mb-2">
+            <div class="snippet3">
+                <img src="Screenshot 2023-08-14 001930.png" alt="snippet3" class="w-100 d-block">
+            </div>
+        </div>
+
+        <div class="footer mt-4">
+            <!-- <div class="snippet4">
+                <img src="Screenshot 2023-08-14 003832.png" alt="snippet4" class="w-100 d-block">
+            </div> -->
+            <div class="snippet5">
+                <img src="Screenshot 2023-08-14 003916.png" alt="snippet5" class="w-100 d-block">
+            </div>
+            <div class="snippet6">
+                <img src="Screenshot 2023-08-14 004057.png" alt="snippet6" class="w-100 d-block">
+            </div>
+            <div class="snippet7 ps-3">
+                <img src="Screenshot 2023-08-14 004202.png" alt="snippet7" class="w-100 d-block">
+            </div>
+            <div class="snippet8">
+                <img src="Screenshot 2023-08-14 004250.png" alt="snippet8" class="w-100 d-block">
+            </div>
+            <div class="snippet9">
+                <img src="Screenshot 2023-08-14 004332.png" alt="snippet9" class="w-100 d-block">
+            </div>
+            
+        </div>
+
+    </div> 
+            
+            
+        
+    
+</body>
+</html>
